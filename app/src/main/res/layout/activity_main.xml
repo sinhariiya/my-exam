@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello RIYA"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/examname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/displayName"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Exam Name"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/examtotalmarks"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/examname"
+        android:layout_below="@+id/examname"
+        android:layout_marginTop="20dp"
+        android:hint="Total marks"
+        />
+
+    <EditText
+        android:id="@+id/exammarksobtained"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/examname"
+        android:layout_toRightOf="@+id/examtotalmarks"
+        android:layout_marginTop="20dp"
+        android:hint="Marks Obtained"
+        android:padding="10dp"
+        />
+
+
+    <EditText
+    android:id="@+id/grade"
+    android:layout_width="150dp"
+    android:layout_height="50dp"
+    android:layout_below="@+id/examtotalmarks"
+    android:layout_marginTop="20dp"
+    android:layout_alignLeft="@+id/examtotalmarks"
+    android:layout_marginRight="20dp"
+    android:hint="Enter Grade"
+    />
+
+    <EditText
+        android:id="@+id/examdate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/examtotalmarks"
+        android:layout_marginTop="20dp"
+       android:layout_alignLeft="@+id/exammarksobtained"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Date"
+        />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/grade"
+        android:layout_alignLeft="@+id/grade"
+        android:layout_marginTop="30dp"
+        android:text="SUBMIT"
+        />
+    <Button
+        android:id="@+id/detail"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/grade"
+        android:layout_toRightOf="@+id/submit"
+        android:layout_marginTop="30dp"
+        android:text="Details"
+        />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/detail"
+        android:text="LOGOUT"
+        />
+
+
+
+</RelativeLayout>
